@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="LogLens logo">
+  <defs>
+    <linearGradient id="shield" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 3.500 55 11.500v18.500c0 14.500-10 25-23 31C19 55 9 44.500 9 30V11.500Z" fill="url(#shield)"/>
+  <path d="M32 8.500 50 15v15c0 11.500-7.500 20-18 25.200C21.500 50 14 41.500 14 30V15Z" fill="#0a1020" fill-opacity=".62"/>
+  <circle cx="30" cy="29" r="9" fill="none" stroke="#ffffff" stroke-width="3.500"/>
+  <path d="M36.800 35.800 44 43" stroke="#ffffff" stroke-width="4.200" stroke-linecap="round"/>
+  <path d="M23.500 29.500h3.200l2-4.500 3 8.500 2-4h2.800" fill="none" stroke="#22d3ee" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

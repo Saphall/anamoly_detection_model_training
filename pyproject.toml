@@ -9,7 +9,19 @@ dependencies = [
     "numpy>=1.26",
     "pandas>=2.2",
     "scikit-learn~=1.9.1",  # the models were pickled with 1.9.1
+    "streamlit>=1.66.1",
 ]
+
+[project.scripts]
+app = "loglens.cli:main"
+detect-anomaly = "loglens.detect_anomaly:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "loglens"
 
 [dependency-groups]
 notebook = [

@@ -1,23 +1,25 @@
 """Score logs with artifacts/message_detector.joblib.
 
-Usage:
-    python detect_anomaly.py                        # score data/security_logs.csv
-    python detect_anomaly.py --csv other_stream.csv # any CSV with severity + message columns
-    python detect_anomaly.py --samples              # a few lines taken from security_logs.csv
-    python detect_anomaly.py "WARNING Failed password for bob from 203.0.113.7 port 22 ssh2"
-    python detect_anomaly.py --file my_logs.txt     # one "SEVERITY message" per line
+Usage (from the project root):
+    uv run detect-anomaly                        # score data/security_logs.csv
+    uv run detect-anomaly --csv other_stream.csv # any CSV with severity + message columns
+    uv run detect-anomaly --samples              # a few lines taken from security_logs.csv
+    uv run detect-anomaly "WARNING Failed password for bob from 203.0.113.7 port 22 ssh2"
+    uv run detect-anomaly --file my_logs.txt     # one "SEVERITY message" per line
 """
 import argparse
 import re
+import sys
 from pathlib import Path
 
 import joblib
 import numpy as np
 import pandas as pd
 
-MODEL_PATH = Path(__file__).parent / "artifacts" / "message_detector.joblib"
-DEFAULT_CSV = Path(__file__).parent / "data" / "security_logs.csv"
-DEFAULT_OUT = Path(__file__).parent / "artifacts" / "security_logs_scored.csv"
+ROOT = Path(__file__).resolve().parents[2]
+MODEL_PATH = ROOT / "artifacts" / "message_detector.joblib"
+DEFAULT_CSV = ROOT / "data" / "security_logs.csv"
+DEFAULT_OUT = ROOT / "artifacts" / "security_logs_scored.csv"
 SEV_MAP = {"INFO": 0, "WARNING": 1, "ERROR": 2, "CRITICAL": 3}
 SEV_RE = re.compile(r"^(INFO|WARNING|ERROR|CRITICAL)\s+")
 IP_RE = re.compile(r"\b\d{1,3}(?:\.\d{1,3}){3}\b")
@@ -95,6 +97,24 @@ class MessageDetector:
 
     def predict(self, df):
         return (self.score(df) >= self.threshold).astype(int)
+
+
+def load_detector(path: Path = MODEL_PATH):
+    """joblib.load, with the notebook's `__main__` class names temporarily resolving to this module."""
+    main = sys.modules["__main__"]
+    names = {"MsgFeatures": MsgFeatures, "MessageDetector": MessageDetector}
+    missing = object()
+    saved = {n: getattr(main, n, missing) for n in names}
+    try:
+        for n, cls in names.items():
+            setattr(main, n, cls)
+        return joblib.load(path)
+    finally:
+        for n, old in saved.items():
+            if old is missing:
+                delattr(main, n)
+            else:
+                setattr(main, n, old)
 
 
 def to_frame(lines):
@@ -180,7 +200,7 @@ def main():
 
     line_mode = bool(args.logs or args.file or args.samples)
     if args.csv or not line_mode:
-        detector = joblib.load(MODEL_PATH)
+        detector = load_detector()
         df = load_csv(args.csv or DEFAULT_CSV)
         prob = detector.score(df)
         report_csv(df, prob, (prob >= detector.threshold).astype(int), detector, Path(args.out), args.top)
@@ -193,7 +213,7 @@ def main():
         lines += SAMPLE_LOGS
 
     df = to_frame(lines)
-    detector = joblib.load(MODEL_PATH)
+    detector = load_detector()
     feats = detector.features.transform(df)
     prob = detector.score(df)
 
