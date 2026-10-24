@@ -1,0 +1,245 @@
+{
+  "training_data": {
+    "file": "data/combined_train.csv",
+    "rows": 7000,
+    "anomalies": 157,
+    "train_csv_rows_used": false
+  },
+  "message_model": {
+    "type": "RandomForestClassifier",
+    "params": {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+    },
+    "alert_threshold": 0.25585938777636696,
+    "features": [
+      "sev_ord",
+      "rarity",
+      "log_size_mb",
+      "n_ext_ip",
+      "text_svd_0",
+      "text_svd_1",
+      "text_svd_2",
+      "text_svd_3",
+      "text_svd_4",
+      "text_svd_5"
+    ],
+    "file": "artifacts/message_detector.joblib"
+  },
+  "cv_unseen_lines_and_templates": {
+    "line": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0,
+      "alerts": 134,
+      "anomalies": 134
+    },
+    "template": {
+      "precision": 0.04819277108433735,
+      "recall": 0.26865671641791045,
+      "F1": 0.08172531214528944,
+      "alerts": 747,
+      "anomalies": 134
+    }
+  },
+  "cv_model_comparison": {
+    "line/False/HistGB (balanced)": {
+      "AP": 1.0,
+      "ROC_AUC": 1.0,
+      "F1@k": 1.0
+    },
+    "line/False/IsolationForest (unsupervised)": {
+      "AP": 0.7655,
+      "ROC_AUC": 0.9926,
+      "F1@k": 0.5128
+    },
+    "line/False/LogReg (balanced)": {
+      "AP": 0.9995,
+      "ROC_AUC": 1.0,
+      "F1@k": 0.9926
+    },
+    "line/False/RandomForest (balanced)": {
+      "AP": 1.0,
+      "ROC_AUC": 1.0,
+      "F1@k": 1.0
+    },
+    "line/False/Rule: severity >= ERROR": {
+      "AP": 0.3477,
+      "ROC_AUC": 0.9407,
+      "F1@k": 0.3507
+    },
+    "line/True/HistGB (balanced)": {
+      "AP": 1.0,
+      "ROC_AUC": 1.0,
+      "F1@k": 1.0
+    },
+    "line/True/IsolationForest (unsupervised)": {
+      "AP": 0.841,
+      "ROC_AUC": 0.9959,
+      "F1@k": 0.714
+    },
+    "line/True/LogReg (balanced)": {
+      "AP": 0.9757,
+      "ROC_AUC": 0.9995,
+      "F1@k": 0.9704
+    },
+    "line/True/RandomForest (balanced)": {
+      "AP": 1.0,
+      "ROC_AUC": 1.0,
+      "F1@k": 1.0
+    },
+    "line/True/Rule: severity >= ERROR": {
+      "AP": 0.3477,
+      "ROC_AUC": 0.9407,
+      "F1@k": 0.3507
+    },
+    "template/False/HistGB (balanced)": {
+      "AP": 0.6186,
+      "ROC_AUC": 0.7954,
+      "F1@k": 0.6041
+    },
+    "template/False/IsolationForest (unsupervised)": {
+      "AP": 0.9633,
+      "ROC_AUC": 0.9968,
+      "F1@k": 0.9551
+    },
+    "template/False/LogReg (balanced)": {
+      "AP": 1.0,
+      "ROC_AUC": 1.0,
+      "F1@k": 1.0
+    },
+    "template/False/RandomForest (balanced)": {
+      "AP": 1.0,
+      "ROC_AUC": 1.0,
+      "F1@k": 1.0
+    },
+    "template/False/Rule: severity >= ERROR": {
+      "AP": 0.866,
+      "ROC_AUC": 0.9854,
+      "F1@k": 0.8612
+    },
+    "template/True/HistGB (balanced)": {
+      "AP": 0.8052,
+      "ROC_AUC": 0.8958,
+      "F1@k": 0.8
+    },
+    "template/True/IsolationForest (unsupervised)": {
+      "AP": 0.9633,
+      "ROC_AUC": 0.9968,
+      "F1@k": 0.9551
+    },
+    "template/True/LogReg (balanced)": {
+      "AP": 0.9885,
+      "ROC_AUC": 0.9991,
+      "F1@k": 0.9878
+    },
+    "template/True/RandomForest (balanced)": {
+      "AP": 1.0,
+      "ROC_AUC": 1.0,
+      "F1@k": 1.0
+    },
+    "template/True/Rule: severity >= ERROR": {
+      "AP": 0.866,
+      "ROC_AUC": 0.9854,
+      "F1@k": 0.8612
+    }
+  },
+  "test_stream_comparison": {
+    "Severity rule (>= ERROR)": {
+      "ROC_AUC": 0.9548,
+      "AP": 0.346,
+      "alerts": 37.0,
+      "TP": 37.0,
+      "FP": 0.0,
+      "precision": 1.0,
+      "recall": 0.2741,
+      "F1": 0.4302
+    },
+    "Stream Isolation Forest (Parts 4-7, unsupervised)": {
+      "ROC_AUC": 0.999,
+      "AP": 0.9162,
+      "alerts": 153.0,
+      "TP": 135.0,
+      "FP": 18.0,
+      "precision": 0.8824,
+      "recall": 1.0,
+      "F1": 0.9375
+    },
+    "Message RF, out-of-fold (honest)": {
+      "ROC_AUC": 1.0,
+      "AP": 1.0,
+      "alerts": 135.0,
+      "TP": 135.0,
+      "FP": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    "Message RF, final model (in-sample)": {
+      "ROC_AUC": 1.0,
+      "AP": 1.0,
+      "alerts": 135.0,
+      "TP": 135.0,
+      "FP": 0.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    "Hybrid: RF out-of-fold OR stream IF": {
+      "ROC_AUC": 0.9995,
+      "AP": 0.9577,
+      "alerts": 153.0,
+      "TP": 135.0,
+      "FP": 18.0,
+      "precision": 0.8824,
+      "recall": 1.0,
+      "F1": 0.9375
+    }
+  },
+  "test_stream_per_attack_recall": {
+    "data_dump": {
+      "Severity rule (>= ERROR)": 1.0,
+      "Stream Isolation Forest (Parts 4-7, unsupervised)": 1.0,
+      "Message RF, out-of-fold (honest)": 1.0,
+      "Message RF, final model (in-sample)": 1.0,
+      "Hybrid: RF out-of-fold OR stream IF": 1.0
+    },
+    "exfiltration": {
+      "Severity rule (>= ERROR)": 1.0,
+      "Stream Isolation Forest (Parts 4-7, unsupervised)": 1.0,
+      "Message RF, out-of-fold (honest)": 1.0,
+      "Message RF, final model (in-sample)": 1.0,
+      "Hybrid: RF out-of-fold OR stream IF": 1.0
+    },
+    "port_scan": {
+      "Severity rule (>= ERROR)": 1.0,
+      "Stream Isolation Forest (Parts 4-7, unsupervised)": 1.0,
+      "Message RF, out-of-fold (honest)": 1.0,
+      "Message RF, final model (in-sample)": 1.0,
+      "Hybrid: RF out-of-fold OR stream IF": 1.0
+    },
+    "privilege_escalation": {
+      "Severity rule (>= ERROR)": 1.0,
+      "Stream Isolation Forest (Parts 4-7, unsupervised)": 1.0,
+      "Message RF, out-of-fold (honest)": 1.0,
+      "Message RF, final model (in-sample)": 1.0,
+      "Hybrid: RF out-of-fold OR stream IF": 1.0
+    },
+    "ssh_brute_force": {
+      "Severity rule (>= ERROR)": 0.0,
+      "Stream Isolation Forest (Parts 4-7, unsupervised)": 1.0,
+      "Message RF, out-of-fold (honest)": 1.0,
+      "Message RF, final model (in-sample)": 1.0,
+      "Hybrid: RF out-of-fold OR stream IF": 1.0
+    },
+    "suspicious_login": {
+      "Severity rule (>= ERROR)": 1.0,
+      "Stream Isolation Forest (Parts 4-7, unsupervised)": 1.0,
+      "Message RF, out-of-fold (honest)": 1.0,
+      "Message RF, final model (in-sample)": 1.0,
+      "Hybrid: RF out-of-fold OR stream IF": 1.0
+    }
+  },
+  "note": "Labels are proxy labels derived from event_type/source_ip/bytes_out; treat scores as optimistic."
+}

@@ -1,0 +1,154 @@
+event_id,timestamp,host,severity,message,score,attack
+980aa87c-2985-4e88-9298-00d8bbdae79a,2026-10-16 14:27:48.172,ws-014,ERROR,Large outbound transfer of 1789 MB to 185.35.254.94,0.7895585589660559,exfiltration
+154b25a9-211f-4c0f-b887-9d85a2f70ddf,2026-10-16 14:20:49.467,ws-014,ERROR,Large outbound transfer of 1681 MB to 185.82.197.219,0.7895585589660559,exfiltration
+d823a02e-4727-4a33-a40b-e63de8c78891,2026-10-16 14:20:34.467,ws-014,ERROR,Large outbound transfer of 2979 MB to 185.82.197.219,0.7895585589660559,exfiltration
+18ee851f-fb3d-4bb4-9af7-c301734e2381,2026-10-16 14:27:55.157,ws-014,ERROR,Large outbound transfer of 1905 MB to 185.35.254.94,0.7895585589660559,exfiltration
+0a694f02-aa24-43a3-8986-f4cc4fbcd885,2026-10-16 14:25:26.467,ws-020,ERROR,Large outbound transfer of 2614 MB to 103.112.146.19,0.7893805108723131,exfiltration
+b7ad36dc-964f-42ec-abd0-7150811be92e,2026-10-16 14:24:59.474,ws-020,ERROR,Large outbound transfer of 2408 MB to 103.112.146.19,0.7893805108723131,exfiltration
+3ae5c3e8-bc4b-4b6a-8a0a-67334ef9e6bb,2026-10-16 14:20:26.265,ws-014,ERROR,Large outbound transfer of 1477 MB to 185.82.197.219,0.7890245351270939,exfiltration
+fa490ce1-dabf-47b8-b05d-4515ecd266cb,2026-10-16 14:27:46.467,ws-014,ERROR,Large outbound transfer of 1020 MB to 185.35.254.94,0.787957570777933,exfiltration
+93b115e5-0d30-4b65-bcbc-7624674cf777,2026-10-16 14:25:14.787,ws-020,ERROR,Large outbound transfer of 946 MB to 103.112.146.19,0.7876022367158484,exfiltration
+1edb7b40-60df-4986-8159-f8eb59c22ec9,2026-10-16 14:20:28.328,ws-014,ERROR,Large outbound transfer of 750 MB to 185.82.197.219,0.7874246297793109,exfiltration
+edb4bae4-606e-40db-a129-38764877d7a1,2026-10-16 14:27:44.274,ws-014,ERROR,Large outbound transfer of 844 MB to 185.35.254.94,0.7874246297793109,exfiltration
+2722d948-1cc7-41df-8fae-427f54e115d4,2026-10-16 14:25:00.095,ws-020,ERROR,Large outbound transfer of 467 MB to 103.112.146.19,0.7874246297793109,exfiltration
+25d4ff71-ba86-497b-9f6d-42d3713bfb9d,2026-10-16 14:26:26.950,ws-008,ERROR,Large outbound transfer of 390 MB to 103.107.130.230,0.7868920492393208,exfiltration
+bd836934-00dc-4caf-8982-8346bcd431c1,2026-10-16 14:21:03.155,ws-008,ERROR,Large outbound transfer of 2302 MB to 203.130.70.157,0.782638228226182,exfiltration
+0326efd5-cfea-4eb9-8032-5080966bab0a,2026-10-16 14:21:24.060,ws-008,ERROR,Large outbound transfer of 2256 MB to 203.130.70.157,0.7792964929836707,exfiltration
+729d7afb-5f64-4dd6-bfc2-09d2ceacccaa,2026-10-16 04:12:40.000,auth-01,CRITICAL,sudo session opened for admin,0.7770610473282027,privilege_escalation
+205f459f-f70d-4f52-9510-0c2c71687702,2026-10-16 02:37:40.000,auth-01,CRITICAL,sudo session opened for root,0.7770610473282027,privilege_escalation
+41b209ee-055d-4e4c-831a-a3473dc4e93c,2026-10-16 14:21:05.833,ws-008,ERROR,Large outbound transfer of 1603 MB to 203.130.70.157,0.775573404452698,exfiltration
+93957b46-26be-4249-a42f-5ba1101060a7,2026-10-16 14:21:19.414,ws-008,ERROR,Large outbound transfer of 2871 MB to 203.130.70.157,0.7749253316210337,exfiltration
+8f906cdb-fc35-4564-97c6-65eeb1efefb9,2026-10-16 14:26:24.787,ws-008,ERROR,Large outbound transfer of 2948 MB to 103.107.130.230,0.7749253316210337,exfiltration
+ff04902d-420c-47e2-86ea-22d4d2486fdc,2026-10-16 14:23:20.310,vpn-01,ERROR,VPN login for yara from IN two minutes after US,0.7726559945167658,suspicious_login
+d361c65d-7bdb-4543-8794-fa6c9c833bfe,2026-10-16 14:26:02.310,vpn-01,ERROR,VPN login for amir from GB two minutes after US,0.7726559945167658,suspicious_login
+a4208f62-3d3d-4389-9da0-1809f7364e19,2026-10-16 14:21:10.310,vpn-01,ERROR,VPN login for peggy from SG two minutes after IN,0.7726559945167658,suspicious_login
+f220f323-7e67-45d4-b697-3f7d337c7f6e,2026-10-16 14:27:42.310,vpn-01,ERROR,VPN login for erin from IN two minutes after US,0.7726559945167658,suspicious_login
+4916ce65-b213-4063-bddd-0ea8efba3dd2,2026-10-16 14:21:19.262,ws-008,ERROR,Large outbound transfer of 1349 MB to 203.130.70.157,0.7710389448607665,exfiltration
+6bcf32d4-07fa-4601-bd43-a1ca4ef0f9f6,2026-10-16 02:37:00.000,vpn-01,ERROR,root logged in from 45.11.185.108 outside business hours,0.7619726967874149,suspicious_login
+378af57d-1c57-4b59-b832-3e51b9e80613,2026-10-16 04:12:00.000,vpn-01,ERROR,admin logged in from 45.78.24.74 outside business hours,0.7619726967874149,suspicious_login
+bb3853d5-1f72-42e0-ae02-78cb33b03032,2026-10-16 14:26:39.310,vpn-01,ERROR,Port scan detected from 141.108.210.227,0.7588461805499436,port_scan
+6ba87120-a1f9-4a27-ac0c-4abea84f9b89,2026-10-16 14:22:47.310,db-01,ERROR,Port scan detected from 141.68.163.142,0.7588461805499436,port_scan
+b9e8d189-9985-4cab-8de4-d757d796ac79,2026-10-16 14:21:01.310,db-01,ERROR,Port scan detected from 103.232.107.98,0.7588461805499436,port_scan
+3c75a268-a271-422b-977b-7dce02bd0bc4,2026-10-16 14:27:55.310,web-01,ERROR,Port scan detected from 185.52.52.30,0.7588461805499436,port_scan
+fbe81c14-b6a7-43f9-978c-72a400844c83,2026-10-16 14:23:35.310,vpn-01,ERROR,VPN login for mallory from CA two minutes after US,0.7539522409614479,suspicious_login
+d5f1800f-3a96-4872-97ef-bf09d8f87d02,2026-10-16 14:23:58.310,vpn-01,ERROR,VPN login for nina from JP two minutes after US,0.7532669829466735,suspicious_login
+cb61841a-cc99-4ef9-ac26-a642b27586a9,2026-10-16 14:19:10.310,vpn-01,INFO,VPN login for peggy from IN,0.7512617517902066,normal
+573ca54c-cff6-4725-b2cf-653b27bd274c,2026-10-16 14:21:20.310,vpn-01,INFO,VPN login for yara from US,0.7512617517902066,normal
+f0553913-dc29-4a95-bd99-73744b614b09,2026-10-16 14:25:42.310,vpn-01,INFO,VPN login for erin from US,0.7512617517902066,normal
+eeb7b342-bd3d-45c0-884d-72db64ede4db,2026-10-16 14:24:02.310,vpn-01,INFO,VPN login for amir from US,0.7512617517902066,normal
+4e2cb9bc-5219-42a6-b510-e25902f69000,2026-10-16 14:21:19.310,db-01,ERROR,Port scan detected from 141.199.112.129,0.7392350892895063,port_scan
+6e8c5a15-e491-40a8-ac36-babf755fc970,2026-10-16 14:23:32.310,web-01,ERROR,Port scan detected from 103.21.3.147,0.7392350892895063,port_scan
+d597e486-fdae-4671-a6e5-fdeeda9d0678,2026-10-16 14:21:35.310,vpn-01,INFO,VPN login for mallory from US,0.7316652547548411,normal
+08dd6620-0e10-4a37-acee-08cf84827c86,2026-10-16 14:21:58.310,vpn-01,INFO,VPN login for nina from US,0.7287283714212487,normal
+5d3906da-41e9-4fbf-9841-43e68e9657da,2026-10-16 14:25:33.749,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 3947 ssh2,0.7119430197610344,ssh_brute_force
+0f6dca8e-2e09-4cbd-8d9e-ebc96776787d,2026-10-16 14:25:49.143,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 49828 ssh2,0.7109650914650677,ssh_brute_force
+f780c865-f07e-4163-94d5-1cd3365cf75e,2026-10-16 14:25:48.305,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 65443 ssh2,0.710495433253973,ssh_brute_force
+c3c70c3a-88e3-46e3-9945-b3e43208248b,2026-10-16 14:25:34.489,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 30867 ssh2,0.7101790087771469,ssh_brute_force
+0d17dfa1-57cb-4aea-af57-c8bd83b459f4,2026-10-16 14:25:32.555,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 34577 ssh2,0.7096670012244445,ssh_brute_force
+e4d8891d-6832-4a03-8376-5acd15e35bc4,2026-10-16 14:25:32.512,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 31800 ssh2,0.7093801517732375,ssh_brute_force
+b930ff42-1523-4ea8-ab2e-11b5a1d499d9,2026-10-16 14:25:48.326,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 48460 ssh2,0.7092889857040178,ssh_brute_force
+69cbe92b-77b7-4702-8cca-107dacfa2e4e,2026-10-16 14:25:34.072,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 52699 ssh2,0.7090824552710777,ssh_brute_force
+78ae742d-59db-4aae-ac95-a80aa748f4f8,2026-10-16 14:25:31.648,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 44731 ssh2,0.7085475328204492,ssh_brute_force
+c14a35bd-6fcb-4628-9da9-0eb1d6e2c248,2026-10-16 14:25:35.546,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 43503 ssh2,0.7084762064761867,ssh_brute_force
+4596de84-b7c4-4173-b358-af3d1bb6ef61,2026-10-16 14:25:46.762,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 18999 ssh2,0.7082793464884933,ssh_brute_force
+5607aa6f-70cd-4889-a3c4-30d46007e56d,2026-10-16 14:25:34.799,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 35292 ssh2,0.7076352248093041,ssh_brute_force
+2f2fe578-d2de-4a2b-80a0-b45c03e50319,2026-10-16 14:25:46.785,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 62408 ssh2,0.7074480195810788,ssh_brute_force
+0448f8f2-b3e0-48e6-88f1-98fa95f684ad,2026-10-16 14:25:35.683,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 49579 ssh2,0.7067344874430908,ssh_brute_force
+2461d929-58ab-4e81-9e92-1ab7f30e7631,2026-10-16 14:25:30.887,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 17349 ssh2,0.7053204273644066,ssh_brute_force
+d113fd62-142e-49e1-b597-2e480dc73899,2026-10-16 14:25:45.175,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 13778 ssh2,0.704588891502189,ssh_brute_force
+3c5213ec-2846-4567-a535-ba58750b6a66,2026-10-16 14:25:36.809,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 63111 ssh2,0.7037883973554904,ssh_brute_force
+022ea05e-2dd4-4a18-a4cc-d804a113bfae,2026-10-16 14:25:45.138,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 16177 ssh2,0.7036361058857993,ssh_brute_force
+ca1b7c3f-5d2b-4be3-b186-6701c4337bb8,2026-10-16 14:25:36.160,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 35138 ssh2,0.7033302377106965,ssh_brute_force
+0c2ea1b3-fa18-490c-9334-0cdfa6ec2e5c,2026-10-16 14:25:37.785,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 35348 ssh2,0.7032593934753114,ssh_brute_force
+969a1f83-8082-4d4a-8837-923176c34f64,2026-10-16 14:25:37.959,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 57056 ssh2,0.7027848602102316,ssh_brute_force
+76afd369-3e5f-40fb-9aef-44dbb5aefeb5,2026-10-16 14:25:47.393,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 47713 ssh2,0.7025496549637502,ssh_brute_force
+eb68921c-8a54-4ee2-b032-e6bd6a6c72ed,2026-10-16 14:25:38.072,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 24033 ssh2,0.7007274011077776,ssh_brute_force
+85db78fc-0e7c-44e8-91e9-db1e7fa81da2,2026-10-16 14:25:41.970,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 58177 ssh2,0.7003053826737171,ssh_brute_force
+2600b717-bda2-4834-a446-c42a96f299e9,2026-10-16 14:20:52.072,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 45395 ssh2,0.7001371373375388,ssh_brute_force
+e31d1128-ce27-4c4c-81a7-04cef3b5a4f3,2026-10-16 14:20:52.204,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 37917 ssh2,0.7000026728736269,ssh_brute_force
+50a9395f-70fc-4249-9a67-16bea9639ab7,2026-10-16 14:20:52.295,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 40641 ssh2,0.7000026728736269,ssh_brute_force
+b86c86c7-cb44-4fcc-9688-ab64232735bc,2026-10-16 14:25:40.748,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 42893 ssh2,0.6992738280317027,ssh_brute_force
+9f3c79eb-fe69-469f-8836-426b91a5a9cc,2026-10-16 14:25:46.009,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 29670 ssh2,0.699047629904684,ssh_brute_force
+4a7ee36d-3ec4-4e23-aa4f-554bdb8994e9,2026-10-16 14:25:45.467,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 30733 ssh2,0.6989744086038561,ssh_brute_force
+fcf327e7-6c05-40f2-8c54-2ed0a17f0518,2026-10-16 14:25:38.626,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 8176 ssh2,0.6986759653820325,ssh_brute_force
+e837ef6f-5193-4a86-bc2d-1699255a9376,2026-10-16 14:25:45.448,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 14169 ssh2,0.6985016520327568,ssh_brute_force
+c50522e2-8a1f-4761-9f8a-f3f5f9bcc0c8,2026-10-16 14:25:45.393,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 37529 ssh2,0.6980525687731897,ssh_brute_force
+a331097d-6a54-4856-b23b-f7ec0dcc822f,2026-10-16 14:25:39.059,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 9488 ssh2,0.6980459634627463,ssh_brute_force
+ccb50419-b2a7-457f-a5a8-3f2213e77c14,2026-10-16 14:25:41.400,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 25684 ssh2,0.697059446890031,ssh_brute_force
+5b8e189b-cf56-4c0d-abdc-014bc3e679b0,2026-10-16 14:25:40.203,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 9833 ssh2,0.6969681440127593,ssh_brute_force
+f649bdd1-4dc7-49a0-9da5-7fc0f20d8e44,2026-10-16 14:25:41.369,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 57150 ssh2,0.6969017344827124,ssh_brute_force
+cc89b061-64b8-49b6-ac9a-f32d66d2e522,2026-10-16 14:25:30.757,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 62947 ssh2,0.6968700018416354,ssh_brute_force
+bdc5e898-fe2d-4b2b-84a4-e5d5404a8bac,2026-10-16 14:25:43.923,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 60621 ssh2,0.6964925086169593,ssh_brute_force
+3a038f6d-a4bf-4c77-bdf0-3821b1c065e5,2026-10-16 14:25:41.075,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 23824 ssh2,0.6950147656645592,ssh_brute_force
+df5f46b3-cfc3-4ce7-913c-c9bd8ca7a48c,2026-10-16 14:25:43.315,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 33836 ssh2,0.694287623353244,ssh_brute_force
+d632adb8-a876-4c56-b1a3-bc3fa623c620,2026-10-16 14:23:17.792,auth-01,WARNING,Failed password for heidi from 10.0.1.17 port 37130 ssh2,0.6937330497778089,normal
+6f1cf552-358c-4d04-b733-0c0bc1de326f,2026-10-16 14:25:43.510,auth-01,WARNING,Failed password for admin from 103.112.87.58 port 7752 ssh2,0.6936615784384028,ssh_brute_force
+072126b1-2df9-429a-9600-1ec7f9349552,2026-10-16 14:20:51.936,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 11835 ssh2,0.6925053446122637,ssh_brute_force
+d6a820d4-ae2a-4487-b9a5-0c1f5105a0dc,2026-10-16 14:21:10.582,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:1260,0.6915341824564802,normal
+6e402742-cf5f-43f0-a52b-9f0a504807dc,2026-10-16 14:21:10.676,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:4623,0.6913782391872367,normal
+3dec85c7-cf68-4183-b6ff-e1985f99b84c,2026-10-16 14:28:09.450,auth-01,WARNING,Failed password for amir from 10.0.1.36 port 56165 ssh2,0.691160470484256,normal
+80cd5c7e-7862-4aa8-9781-51b8adb13438,2026-10-16 14:21:10.664,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:5332,0.6905990501683718,normal
+fa185271-d6b4-4419-b1e4-688409750ffc,2026-10-16 14:21:10.730,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:9789,0.6904433177745845,normal
+bfc32cf0-89ff-4e54-82b2-622424d74bf3,2026-10-16 14:20:50.273,auth-01,INFO,Session closed for judy,0.6902440854037001,normal
+ff34f14a-5fb0-4a33-9b52-639f197d6bee,2026-10-16 14:21:10.805,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:1093,0.6899763312705985,normal
+ec22c7bb-b0ae-4b22-8e71-0b34799a0381,2026-10-16 14:21:10.394,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:5504,0.6897376034092783,normal
+2dcf328e-84ee-4517-93c8-2af89315b04f,2026-10-16 14:21:10.139,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:1114,0.689426562214319,normal
+8ab7d7bd-ddba-4f3d-8339-4083c4078cee,2026-10-16 14:21:10.045,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:7231,0.6880286117138157,normal
+2580e8ef-b56a-445b-8f8d-65dfb7829417,2026-10-16 02:39:00.000,db-01,ERROR,Database dump of customers table,0.6879380062634843,data_dump
+111441ce-b3e5-43ac-ba8b-ecee4e1890ec,2026-10-16 04:14:00.000,db-01,ERROR,Database dump of customers table,0.6879380062634843,data_dump
+43d22dce-2bb8-4ed6-8a69-94e08c6d1329,2026-10-16 14:21:10.003,db-01,WARNING,DROP TCP 141.199.112.129 -> 10.0.20.5:2719,0.6873530628748994,normal
+f243b901-6fe3-4776-9a6a-e2652c3ced6a,2026-10-16 14:20:37.582,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 26353 ssh2,0.6871873409681944,ssh_brute_force
+99f339b0-51e1-485e-a347-acb8a6ae2415,2026-10-16 14:20:40.566,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 2092 ssh2,0.6871873409681944,ssh_brute_force
+22f42b0e-7b5a-41a1-8d8a-d9ef7015bc20,2026-10-16 14:20:40.414,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 27239 ssh2,0.6871873409681944,ssh_brute_force
+aa75ed8e-5195-4d76-9729-86a573e7955a,2026-10-16 14:20:40.104,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 8886 ssh2,0.6871873409681944,ssh_brute_force
+9446bf4f-f73d-4200-b194-355fa38dc023,2026-10-16 14:20:39.954,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 38671 ssh2,0.6871873409681944,ssh_brute_force
+b8d37a9f-c002-47e3-8d23-d4599878be36,2026-10-16 14:20:39.902,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 23589 ssh2,0.6871873409681944,ssh_brute_force
+6cdd1f49-ff80-465e-b8f3-a443d375099b,2026-10-16 14:20:39.180,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 1421 ssh2,0.6871873409681944,ssh_brute_force
+94bdde9b-954c-4635-ab4b-e0d6d60cced0,2026-10-16 14:20:38.566,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 23796 ssh2,0.6871873409681944,ssh_brute_force
+1eae0611-ffed-44a2-bbf2-0a2e8f02e8a5,2026-10-16 14:20:38.255,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 16659 ssh2,0.6871873409681944,ssh_brute_force
+59fb74ef-8440-4059-8bc0-4870cfaeef40,2026-10-16 14:20:38.132,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 5817 ssh2,0.6871873409681944,ssh_brute_force
+3701ee76-06a7-46fb-ae4a-f70733e921ee,2026-10-16 14:20:38.058,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 26728 ssh2,0.6871873409681944,ssh_brute_force
+51b96ed7-2f25-48d4-8804-2618d0600061,2026-10-16 14:20:37.947,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 54994 ssh2,0.6871873409681944,ssh_brute_force
+ce125675-7459-4f8d-b93a-a025019e02e6,2026-10-16 14:20:50.327,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 59490 ssh2,0.6871873409681944,ssh_brute_force
+76f81643-491a-4e64-a54e-f8c286a46370,2026-10-16 14:20:40.692,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 40932 ssh2,0.6871873409681944,ssh_brute_force
+7f93a934-b48e-45ff-b719-a8e58bcc7488,2026-10-16 14:20:36.395,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 48815 ssh2,0.6871873409681944,ssh_brute_force
+e254e104-0603-4004-9346-76776c3d8083,2026-10-16 14:20:35.816,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 40260 ssh2,0.6871873409681944,ssh_brute_force
+d3832021-e05f-4016-97d4-fcc121256fa8,2026-10-16 14:20:35.725,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 19062 ssh2,0.6871873409681944,ssh_brute_force
+edb186c7-0ee3-4c00-ab96-710b2d4dafb5,2026-10-16 14:20:35.593,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 29969 ssh2,0.6871873409681944,ssh_brute_force
+1b2cba73-0d9a-4beb-97c4-570939a01686,2026-10-16 14:20:34.883,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 62860 ssh2,0.6871873409681944,ssh_brute_force
+5fb813a4-6b4a-4a34-8508-640e1105f9e9,2026-10-16 14:20:34.778,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 42891 ssh2,0.6871873409681944,ssh_brute_force
+3da956e3-7423-42d0-8065-3fb109b130a8,2026-10-16 14:20:34.006,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 65340 ssh2,0.6871873409681944,ssh_brute_force
+feab89a2-cf6e-4a54-ba7b-3be18ac19620,2026-10-16 14:20:33.588,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 14077 ssh2,0.6871873409681944,ssh_brute_force
+0dd32800-cc04-4723-a233-b6ecf9cadb7c,2026-10-16 14:20:33.383,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 38419 ssh2,0.6871873409681944,ssh_brute_force
+157893a9-398e-4351-b42e-a8e52fcd3043,2026-10-16 14:20:33.195,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 29855 ssh2,0.6871873409681944,ssh_brute_force
+fee9c1ee-be41-4af8-964c-36c9e5482292,2026-10-16 14:20:33.060,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 30152 ssh2,0.6871873409681944,ssh_brute_force
+f4ae21a6-0d78-400e-9336-d34ebec54f73,2026-10-16 14:20:36.749,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 46934 ssh2,0.6871873409681944,ssh_brute_force
+9c6627ff-3866-4d45-8f20-a28700e0e39e,2026-10-16 14:20:41.133,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 7084 ssh2,0.6871873409681944,ssh_brute_force
+8585e550-89cc-4c38-98a0-dec894772e96,2026-10-16 14:20:40.832,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 51625 ssh2,0.6871873409681944,ssh_brute_force
+c270c759-e64b-448e-89b8-42d13a801798,2026-10-16 14:20:41.307,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 7205 ssh2,0.6871873409681944,ssh_brute_force
+10eb498d-dabc-4e80-862b-e25ead0efe93,2026-10-16 14:20:50.109,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 21454 ssh2,0.6871873409681944,ssh_brute_force
+373f963e-fd73-4957-ab90-f3f134ddcaaa,2026-10-16 14:20:49.885,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 6003 ssh2,0.6871873409681944,ssh_brute_force
+85416a88-5ba7-4076-be0c-1220e3080abf,2026-10-16 14:20:49.438,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 13562 ssh2,0.6871873409681944,ssh_brute_force
+0ca30d0a-e45d-4943-8600-f3dd2eba2b68,2026-10-16 14:20:49.366,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 39206 ssh2,0.6871873409681944,ssh_brute_force
+c2454d09-8f75-401a-9af4-852ccd27b34c,2026-10-16 14:20:49.089,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 59296 ssh2,0.6871873409681944,ssh_brute_force
+9a953a8f-847b-42c1-9d39-71d301b9f74c,2026-10-16 14:20:49.035,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 21430 ssh2,0.6871873409681944,ssh_brute_force
+403b771e-21d8-49de-b449-9f393e0904e3,2026-10-16 14:20:48.977,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 24828 ssh2,0.6871873409681944,ssh_brute_force
+a1e20164-9489-4036-9dc0-3e42b152dcb3,2026-10-16 14:20:48.485,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 43768 ssh2,0.6871873409681944,ssh_brute_force
+60350b84-5b96-417c-841d-5c4eec7c39d0,2026-10-16 14:20:47.849,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 56067 ssh2,0.6871873409681944,ssh_brute_force
+2eb25a04-6ca8-45d9-8331-1ddc470f6857,2026-10-16 14:20:47.646,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 18941 ssh2,0.6871873409681944,ssh_brute_force
+1b5fbdc0-2aa0-4300-a458-c24e54c5abb0,2026-10-16 14:20:47.531,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 58823 ssh2,0.6871873409681944,ssh_brute_force
+f08804ff-0a9d-402d-af8f-361b2f939373,2026-10-16 14:20:47.407,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 58191 ssh2,0.6871873409681944,ssh_brute_force
+00e39b78-9b05-496c-a5b7-51b47ead7409,2026-10-16 14:20:46.378,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 6071 ssh2,0.6871873409681944,ssh_brute_force
+cd155f6b-47d2-42f6-800d-9cfaaffb4551,2026-10-16 14:20:46.170,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 53296 ssh2,0.6871873409681944,ssh_brute_force
+9ab69beb-925d-44ca-8df8-76fb822d05a8,2026-10-16 14:20:45.912,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 8769 ssh2,0.6871873409681944,ssh_brute_force
+b332e3b8-4a40-4b22-ac53-e63882763270,2026-10-16 14:20:45.628,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 48727 ssh2,0.6871873409681944,ssh_brute_force
+4a57b400-4182-4d09-bee0-9913722f892c,2026-10-16 14:20:45.289,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 34960 ssh2,0.6871873409681944,ssh_brute_force
+0b88c6fc-a25a-423c-85ee-16e21a2f05b3,2026-10-16 14:20:44.701,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 3227 ssh2,0.6871873409681944,ssh_brute_force
+9881eabc-bc5c-4691-b4f7-b424e1aa9366,2026-10-16 14:20:43.434,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 12235 ssh2,0.6871873409681944,ssh_brute_force
+fce64a3f-2a80-4556-b37c-055683f2a3fd,2026-10-16 14:20:43.328,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 59371 ssh2,0.6871873409681944,ssh_brute_force
+acef1872-d382-4e2f-8d4b-9ff6ac211b4e,2026-10-16 14:20:43.017,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 7897 ssh2,0.6871873409681944,ssh_brute_force
+944f7224-03da-41ef-b65b-af172d6d0ac3,2026-10-16 14:20:42.830,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 25931 ssh2,0.6871873409681944,ssh_brute_force
+e8841718-53ca-454c-bef1-5c17500cc283,2026-10-16 14:20:42.603,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 4721 ssh2,0.6871873409681944,ssh_brute_force
+b0c47c47-67af-4519-ba6a-fa56f796d118,2026-10-16 14:20:42.276,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 48609 ssh2,0.6871873409681944,ssh_brute_force
+6b2bf6d2-b619-4464-8e17-496b78fb4842,2026-10-16 14:20:41.824,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 61907 ssh2,0.6871873409681944,ssh_brute_force
+4ffb2399-c6b9-4092-a4b6-7c1915554765,2026-10-16 14:20:42.195,auth-01,WARNING,Failed password for chen from 103.107.58.40 port 32553 ssh2,0.6871873409681944,ssh_brute_force
